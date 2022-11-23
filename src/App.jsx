@@ -5,6 +5,9 @@ import "./App.css";
 import Navbar from "./Components/Navbar/Navbar";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 
+// Music
+import music from "./audio/bg.mp3";
+
 function App() {
   const [scrolled, setScrolled] = useState(0);
   const [content, setContent] = useState("CODER");
@@ -12,6 +15,7 @@ function App() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
+    document.querySelector("#music").play();
   });
 
   useEffect(() => {
@@ -89,6 +93,11 @@ function App() {
 
   return (
     <>
+      {/* MUSIC */}
+      <audio id="music" loop autoPlay>
+        <source src={music} type="audio/mpeg" />
+      </audio>
+
       <div className="MainCurtain"></div>
       <div className="cursor"></div>
 

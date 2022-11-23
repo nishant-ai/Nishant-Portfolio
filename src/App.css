@@ -305,3 +305,7 @@
 .target {
   color: rgb(255, 247, 0);
 }
+
+#music {
+  z-index: 999;
+}
