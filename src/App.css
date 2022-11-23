@@ -301,3 +301,7 @@
   font-size: 8vh;
   font-family: "Poppins", sans-serif;
 }
+
+.target {
+  color: rgb(255, 247, 0);
+}

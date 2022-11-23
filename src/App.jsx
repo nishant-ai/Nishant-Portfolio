@@ -158,7 +158,10 @@ function App() {
             <br />
 
             <code>
-              &gt; $bash {jumpto ? `goto $${jumpto}` : `$bash hover-contacts`}
+              &gt; $bash goto
+              <span className="target">
+                {jumpto ? ` $${jumpto}` : ` hover-contacts`}
+              </span>
             </code>
           </div>
 
