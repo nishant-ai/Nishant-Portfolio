@@ -1,0 +1,34 @@
+.Navbar {
+  height: 13vh;
+  width: 60vw;
+  display: flex;
+  align-items: center;
+  padding: 0 3vw;
+}
+
+.Back_Icon {
+  background: #ffffff;
+  color: black;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.Back_Icon:hover {
+  transform: rotate(90deg);
+  transition: 0.3s ease-in-out;
+  background: #000;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.Navbar_Path {
+  background: #fff;
+  color: #000;
+  margin-left: 5vw;
+  padding: 5px;
+}
